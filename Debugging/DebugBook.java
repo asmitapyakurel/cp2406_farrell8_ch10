@@ -1,12 +1,19 @@
-public class DebugBook
+public abstract class DebugBook
 {
-   protected int pages;
-   public void DebugBook(int pgs)
+   protected String pages;
+
+
+
+
+   public DebugBook(String pgs)
    {
       pages = pgs;
    }
-   public int getPages()
+   public int getPages(int pgs)
    {
       return pgs;
    }
+
+
+   public abstract int getPages();
 }

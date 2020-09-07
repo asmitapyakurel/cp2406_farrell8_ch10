@@ -2,7 +2,7 @@
 // purchase does not exceed the credit limit
 public class DebugTen4
 {
-   public static void main(String args[])
+   public static void main(String[] args)
    {
       int id = 12241;
       String name = "Franklin";
