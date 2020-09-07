@@ -1,18 +1,18 @@
 import javax.swing.*;
 public class DebugPhoneBook extends DebugBook
 {
-   private final int area;
+   private final String area;
    private final String size ;
-   int CUTOFF = 30;
+   private  final int CUTOFF = 30;
 
-   DebugPhoneBook(String pages, int city)
+   DebugPhoneBook(int pages, String city)
    {
       super(pages);
-      area = city;
+      this.area = city;
 
 
-      if (CUTOFF > pages)
-      {
+      if (pages < CUTOFF) {
+
          size = "big";
       }
       else
@@ -25,11 +25,11 @@ public class DebugPhoneBook extends DebugBook
    {
       JOptionPane.showMessageDialog(null,"The phone book for " + area +
          " has " + pages + " pages.\nThat is a " +
-         size + " phone book."); 
+         size + " phone book.");
    }
 
    @Override
    public int getPages() {
-      return super.getPages(pages);
+      return 0;
    }
 }

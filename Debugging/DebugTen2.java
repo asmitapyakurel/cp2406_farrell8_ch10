@@ -6,14 +6,14 @@ public class DebugTen2
 
    public static void main(String[] args)
    {
-      Object debugVacation = new DebugExtendedVacation();
+      DebugVacation yourVacation = new DebugVacation();
 
-      Object debugExtendedVacation = new DebugExtendedVacation();
-      DebugVacation myVacation = null;
+      DebugExtendedVacation myVacation = new DebugExtendedVacation();
+
       assert false;
       System.out.println("My vacation is for " +
          myVacation.getDays() + " days");
-      DebugVacation yourVacation = null;
+
       System.out.println("Your vacation is for " +
          yourVacation.getDays() + " days");
    }

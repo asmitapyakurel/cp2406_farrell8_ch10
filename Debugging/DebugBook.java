@@ -1,11 +1,11 @@
 public abstract class DebugBook
 {
-   protected String pages;
+   protected int pages;
 
 
 
 
-   public DebugBook(String pgs)
+   public DebugBook(int pgs)
    {
       pages = pgs;
    }
@@ -16,4 +16,6 @@ public abstract class DebugBook
 
 
    public abstract int getPages();
+
+
 }
